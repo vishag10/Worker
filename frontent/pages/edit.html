@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Doto:wght@100..900&family=DynaPuff:wght@400..700&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+ <link rel="stylesheet" href="../css/reg.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><div class="navlogo"></div><h1 class="navtitle">WORKERS.IN</h1></div>
+        <div class="add"><button class="addon" onclick="location.href = '../index.html'" >home</button></div>
+    </div>
+    <div class="main">
+        <form class="form-container">
+            <h2>Edit Worker</h2>
+            <!-- Name -->
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required>
+    
+            <!-- Age -->
+            <label for="age">Age*</label>
+            <input type="number" id="age" name="age" min="1" max="100" required>
+    
+            <!-- City -->
+            <label for="city">City*</label>
+            <input type="text" id="city" name="city" required>
+    
+            <!-- Job Title -->
+            <label for="job-title">Job Title*</label>
+            <input type="text" id="job-title" name="job-title" required>
+    
+            <!-- Gender -->
+            <div class="gen">
+                <label for="gender">Gender:</label>
+                <input type="radio"  id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+            </div>
+            
+    
+            <!-- Phone Number -->
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+    
+            <!-- Email -->
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+    
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    background-color: #f0e6d7;
+}
+.nav{
+    display: flex;
+    background-color: #f4f0ecf3;
+    border-bottom: 1px solid black;
+}
+.add,.logo{
+    width: 50%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+.navlogo{
+    margin-left: 5%;
+    width: 70px;
+    height: 60px;
+    background-image: url("../img/workers.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.addon{
+    position: absolute;
+    right: 15%;
+    border: none;
+    background-color: #885133;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 18px;
+    
+}
+
+.navtitle{
+    margin-left: 3%;
+    margin-top: 7%;
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #d62300;
+    font-size: 40px;
+}
+.form-container {
+    
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"] {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.main{
+    padding-top: 3%;
+    width: 100%;
+    background-image: url("../img/8288032.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gen{
+   
+}
