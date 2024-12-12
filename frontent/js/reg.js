@@ -21,5 +21,5 @@ document.getElementById("form").addEventListener("submit",(e)=>{
     headers:{"Content-Type": "text/json"},
     body: JSON.stringify({name,age,gender,city,job,phone,email})
    })
-   
+
 })

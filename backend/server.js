@@ -54,12 +54,12 @@ const app=http.createServer(async(req,res)=>{
     if(pathname=="/submit"&&req.method=="POST"){
         let body="";
         req.on("data",(chunks)=>{
-            body+=chunks.toString();
-            console.log(body);
+            body+=chunks
+            console.log(JSON.parse(body));
             
         })
         req.on("end",async()=>{
-            const fromData=querystring.parse(body)
+            const fromData=JSON.parse(body)
             console.log(fromData); 
             collection.insertOne(fromData).then(()=>{
                 console.log("successfully inserted");
@@ -72,7 +72,7 @@ const app=http.createServer(async(req,res)=>{
             })
         })
     }
-    if(pathname=="/getworkers"&&req.method=="GET"){
+    if(pathname=="/getworkers"&&req.method=="GET"){  
         const data=await collection.find().toArray();
         console.log(data);
         const jsonData=JSON.stringify(data);
